@@ -11,12 +11,20 @@
 <body>
     <main class="space-y-5">
      
-        <div class="flex flex-col gap-5 justify-center items-center ">
+        <div id="input-validation" class="flex flex-col gap-5 justify-center items-center ">
             <h1 class="text-4xl text-center">Please input a number between 1 to 10</h1>
             <input id="num" type="number" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs" />
             <button onclick="inputValidation()" id="press" class="btn bg-purple-500 text-white">Press Here</button>
             <p id="display"></p>
-            <button id="anohter-btn" class="btn bg-green-500 text-white">Press For Another Validation</button>
+            <button onclick="phoneNumberValidation()" id="anohter-btn" class="btn bg-green-500 text-white">Press For Another Validation</button>
+        </div>
+        <!-- phone number validation -->
+        <div id="phone" class="hidden flex flex-col gap-5 justify-center items-center ">
+            <h1 class="text-4xl text-center">Please input a Bangladeshi phone Number</h1>
+            <input id="num-phn" type="number" placeholder="Your Phone Number" class="input input-bordered input-warning w-full max-w-xs" />
+            <button onclick="inputValidation()" id="press-bd-number" class="btn bg-purple-500 text-white">Press Here</button>
+            <p id="display-number"></p>
+            <button id="go-back" onclick=" goBack() " class="btn bg-yellow-500 text-white">Press For Go Back</button>
         </div>
     </main>
     <script src="./script.js"></script>

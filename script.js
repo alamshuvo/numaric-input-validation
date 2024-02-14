@@ -8,6 +8,20 @@ function inputValidation() {
         text ="okey your input number is valid ";
     }
     const x=document.getElementById("display").innerText=text;
-    
+}
+function phoneNumberValidation() {
+    const hideElement=document.getElementById("input-validation");
+    const hideElementphn=document.getElementById("phone");
+    const hideBtn=document.getElementById("anohter-btn");
+    hideElement.classList.add("hidden");
+    hideElementphn.classList.remove("hidden");
+   
 
+}
+function goBack() {
+    const hideElement=document.getElementById("input-validation");
+    const hideElementphn=document.getElementById("phone");
+    const goBack=document.getElementById("go-back");
+    hideElementphn.classList.add("hidden");
+    hideElement.classList.remove("hidden");
 }
