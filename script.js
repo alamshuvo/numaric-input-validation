@@ -12,13 +12,19 @@ function inputValidation() {
 function phoneNumberValidation() {
     const hideElement=document.getElementById("input-validation");
     const hideElementphn=document.getElementById("phone");
-    const hideBtn=document.getElementById("anohter-btn");
-    const pressBdNumber=document.getElementById('num-phn').value;
+    // const hideBtn=document.getElementById("anohter-btn");
+    // const pressBdNumber=document.getElementById('num-phn').value;
     hideElement.classList.add("hidden");
     hideElementphn.classList.remove("hidden");
-    const f=phoneNumberValidationa(pressBdNumber);
-    const x=document.getElementById("display-number");
-    x.innerText=f;
+ 
+}
+function phoneNumberValidation2(){
+    const pressBdNumber=document.getElementById('num-phn').value;
+        const f=phoneNumberValidationa(pressBdNumber);
+   
+       const x=document.getElementById("display-number");
+    
+       x.innerText=f;
 }
 function goBack() {
     const hideElement=document.getElementById("input-validation");
@@ -26,4 +32,7 @@ function goBack() {
     const goBack=document.getElementById("go-back");
     hideElementphn.classList.add("hidden");
     hideElement.classList.remove("hidden");
+    const x=document.getElementById("display-number");
+    x.innerText='';
+
 }
